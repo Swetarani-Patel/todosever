@@ -2,7 +2,6 @@ import { request } from "express";
 import Todo from "../model/Todo.js";
 
 export const addTodo = async (req, res) => {
-  res.send("working")
    try{
       const newTodo = await Todo.create({
          data: req.body.data,
